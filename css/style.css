@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Helvetica-Regular';
+    src: local('Helvetica Now Display Regular'), local('Helvetica-Now-Display-Regular'),
+        url('../fonts/HelveticaNowRegular/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/HelveticaNowRegular/HelveticaNowDisplay-Regular.woff') format('woff'),
+        url('../fonts/HelveticaNowRegular/HelveticaNowDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: local('Helvetica Now Display Bold'), local('Helvetica-Now-Display-Bold'),
+        url('../fonts/HelveticaNowBold/HelveticaNowDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNowBold/HelveticaNowDisplay-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNowBold/HelveticaNowDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Gilroy-Extra-Bold';
+    src: url('../fonts/gilroy-extra-bold/Gilroy-ExtraBold.eot');
+    src: url('Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/gilroy-extra-bold/Gilroy-ExtraBold.woff') format('woff'),
+    url('../fonts/gilroy-extra-bold/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('../fonts/gilroy-light/Gilroy-Light.eot');
+    src: url('../fonts/gilroy-light/Gilroy-Light.eot') format('embedded-opentype'),
+    url('../fonts/gilroy-light/Gilroy-Light.woff') format('woff'),
+    url('../fonts/gilroy-light/Gilroy-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {font-family: 'Montserrat', sans-serif;}    
+
+.wrapper {
+    width: 100%;
+}
+
+.logo {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    height: auto;
+    line-height: 36px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    text-align: right;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.select {
+    height: 445px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.outro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #070606;
+    height: 400px;
+}
+
+.inst-logo {
+    width: 24px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.telega-logo {
+    width: 24px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.viber-logo {
+    width: 24px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.viber-logo-1 {
+    fill: #B6B6B6;;
+}
+
+.viber-logo:hover .viber-logo-1 {
+    fill: #535353;
+}
+
+.inst-logo-1 {
+    fill: #B6B6B6;;
+}
+
+.telega-logo-1 {
+    fill: #B6B6B6;;
+}
+
+.telega-logo:hover .telega-logo-1 {
+    fill: #535353;
+}
+
+.inst-logo:hover .inst-logo-1 {
+    fill: #535353;
+}
+
+.logo-transition {
+    transition: all ease 0.25s; 
+}
+
+.contacts {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.info {
+    height: 90%;
+} 
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 145px;
+    width: 72vw;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 256px;
+}
+
+.ec-cart-widget {
+    min-width: 51px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #414880;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    transition: color 0.15s ease-out;
+}
+
+.menu-text:hover {
+    color: #61C9FB;
+    cursor: pointer;
+}
+
+.catalog-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+}
+
+.good-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.good-price {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    color: #737678;
+}
+
+.main-text-container {
+    width: 712px;
+    padding-bottom: 88px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-main-container {
+    width: 86vw;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    padding-bottom: 45px;
+    padding-left: 15px;
+}
+
+.catalog-title.fatty {
+    font-weight: 700;
+} 
+
+.catalog-title.fatty.group {
+    padding-bottom: 10px;
+}
+
+.catalog-title.low {
+    font-size: 15px;
+}
+
+.arrow {
+    height: 10px;
+}
+
+.catalog-a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.15s ease-out;
+}
+
+.catalog-a:hover {
+    color: #61C9FB;
+}
+
+.group-img {
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.arrow {
+    margin: 0 15px;
+}
+
+.img {
+    overflow: hidden;    
+    width: 100%;
+    height: auto;
+}
+
+.zubr {
+    position: relative;
+    height: 673px;
+    width: 775px;
+}
+
+.main-text {
+    display: flex;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 112.5%;
+    letter-spacing: -0.015em;
+}
+
+.main-text-wrapper {
+    width: 712px;
+    height: 126px;
+}
+
+.blue-line {
+    height: 4px;
+    width: 120.74px;
+    background: #7BC0E3;
+    border-radius: 1000px;
+    margin-bottom: 22px;
+}
+
+.mini-main-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    color: white;
+    background-color: #61C9FB;
+    width: 188px;
+    height: 68px;
+    transition: color .3s,box-shadow .3s;
+}
+
+.plus {
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.second-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    border: 1px solid rgba(7, 0, 59, 0.17);
+    width: 188px;
+    height: 68px;
+    color: #ACE0F9;
+    transition: color .3s,box-shadow .3s;
+}
+
+.for-buttons {
+    width: 390.11px;
+    margin-top: 114.53px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0px 46px 52px 0px #ACE0F98F;
+    color: #444242;
+}
+
+.second-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 46px 52px 0px #ACE0F98F;
+    color: #0085d0;
+}
+
+.white {
+    color: #fff;
+}
+
+.main-wrapper {
+    height: 100vh;
+}
+
+.good-item {
+    width: 33.33%;
+    padding: 0 15px 30px;
+}
+
+.content-item:hover .group-img {
+    transform: scale(1.1);
+}
+
+.a-text {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-content{
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 0 30px;
+    padding-bottom: 145px;
+    min-height: calc(100vh - 256px);
+}
+
+.blue-screen {
+    background: linear-gradient(90deg, rgba(32, 156, 255, 0.5) 0%, rgba(104, 224, 207, 0.5) 100%);
+    width: 100%;
+    height: 1272.69px;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: white;
+}
+
+.comment-item {
+    width: 1420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-mini-item {
+    width: 1025.46px;
+    height: 344.35px;
+    border-radius: 12px;
+    box-shadow: 0px 97px 90px rgba(7, 0, 59, 0.12);
+    justify-content: center;
+}
+
+.stars {
+    margin-top: 10px;
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+.rate {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.left-comment-button {
+    width: 64px;
+    height: 64px;
+    box-shadow: 0px 24px 32px rgba(59, 59, 59, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-comment-button {
+    width: 64px;
+    height: 64px;
+    box-shadow: 0px 24px 32px rgba(59, 59, 59, 0.12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.right-arrow, .left-arrow {
+    fill: #3B3B3B;
+    transition: fill 0.2s ease-out;
+}
+
+.right-comment-button:hover {
+    fill: rgb(0, 133, 208);
+}
+
+.right-comment-button:hover .right-arrow, .left-comment-button:hover .left-arrow{
+    fill: rgb(0, 133, 208);
+}
+
+.items-wrapper {
+    height: 792px;
+    width: 1167px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.second-item {
+    margin-top: 30px;
+    box-shadow: 0px 34px 66px rgba(7, 0, 59, 0.08);
+}
+
+.ferst-item {
+    box-shadow: 0px 97px 90px rgba(7, 0, 59, 0.12);
+    z-index: 1;
+}
+
+.blue-line-in-item {
+    background: #ACE0F9;
+    width: 100%;
+    height: 7px;
+}
+
+.item {
+    display: flex;
+    background: #FDFDFF;
+    border-radius: 12px;
+    height: 381px;
+    width: 359px;
+}
+
+.top-range-item {
+    height: 545.58px;
+}
+
+.star_svg {
+    width: 34px; 
+    height: 33px; 
+    margin-right: 9px;
+}
+
+.question {
+    height: 593px;
+    background-color: rgba(172, 224, 249, 0.38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.write-us-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24.53px;
+}
+
+.question-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 519px;
+}
+
+.mail-button {
+    height: 84px;
+    width: 411px;
+    background-color: #292525;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.comments-wrapper {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail-button:hover {
+    box-shadow: 0px 46px 52px #ACE0F9;
+}
+
+.bottom-range-item {
+    height: 437.33px;
+    background-color: #ACE0F961;
+}
+
+.blue-screen-main-text {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    color: #292525;
+}
+
+.blue-screen-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    display: flex;
+    justify-content: space-around;
+    background-color: #00a1ff;
+    border-radius: 40px;
+    width: 35%;
+    padding: 80px 64px 56px;
+    margin: 64px auto;
+}
+
+.table-item {
+    text-align: left;
+}
+
+.table-item-bold-text {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.table-item-text {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 8px;
+}
+
+.specifications-title {
+    display: flex;
+    justify-content: center;
+}
+
+.title-container {
+    height: 49px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-text {
+    font-family: Gilroy-Extra-Bold;
+    font-size: 40px;
+}
+
+.title-item {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.map-wrapper {
+    width: 75vw;
+}
+
+.map {
+    display: flex;
+    width: 929px;
+    height: 496px;
+}
+
+.map-info {
+    margin-left: 50.64px;
+}
+
+.map-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.montserrat-bold {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.mini-item {
+    width: 100%;
+    padding: 85.9px 47px 42.35px 33px;
+}
+
+.mini-main-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.bottom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 59px;
+    background-color: #2C94FC;
+    cursor: pointer;
+}
+
+.main-button-text {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.white {
+    color: #fff;
+}
