@@ -50,7 +50,7 @@
 .logo {
     font-family: Poppins;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.6vh;
     letter-spacing: 0.1em;
     height: auto;
     line-height: 36px;
@@ -78,12 +78,6 @@
     background: #fff;
     transition: all 0.3s ease;
     height: 100%;
-}
-
-.select {
-    height: 445px;
-    width: 100%;
-    border: 1px solid;
 }
 
 .outro {
@@ -180,7 +174,7 @@
 .menu-text {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 1.68vh;
     line-height: 20px;
     letter-spacing: 0.1em;
     color: #414880;
@@ -215,8 +209,13 @@
 }
 
 .main-text-container {
-    width: 712px;
-    padding-bottom: 88px;
+    max-width: 55%;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+    justify-content: space-between;
+    height: 75%;
 }
 
 .search {
@@ -226,21 +225,21 @@
 }
 
 .sub-main-container {
-    width: 86vw;
-    padding-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px auto;
+    width: 85vw;
+    height: calc( 100vh - 256px);
 }
 
 .content {
-    display: flex;
-    justify-content: center;
+    margin: 0px auto;
 }
 
 .catalog-title {
     text-align: left;
-    font-size: 24px;
+    font-size: 2.6vh;
     font-weight: 400;
     width: 100%;
     padding-bottom: 45px;
@@ -290,15 +289,15 @@
 }
 
 .zubr {
+    height: auto;
+    width: 45%;
     position: relative;
-    height: 673px;
-    width: 775px;
+    bottom: 13%;
 }
 
 .main-text {
-    display: flex;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 6vh;
     line-height: 112.5%;
     letter-spacing: -0.015em;
 }
@@ -318,8 +317,9 @@
 
 .mini-main-text {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 26px;
+    margin-top: 35px;
 }
 
 .button {
@@ -355,7 +355,6 @@
 
 .for-buttons {
     width: 390.11px;
-    margin-top: 114.53px;
     display: flex;
     justify-content: space-between;
 }
@@ -393,12 +392,6 @@
     text-decoration: none;
     color: #000;
     cursor: pointer;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .catalog-content{
@@ -679,12 +672,6 @@
     padding: 85.9px 47px 42.35px 33px;
 }
 
-.mini-main-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-}
-
 .bottom-button {
     display: flex;
     justify-content: center;
@@ -702,4 +689,44 @@
 
 .white {
     color: #fff;
+}
+
+.grid-select {
+    display: grid;
+    grid-template-columns: 29% 21% 21% 21%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.select {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+.what-main-title {
+    font-size: 4.95vh;
+    font-weight: 700;
+}
+
+.what-title {
+    font-size: 2.45vh;
+    font-weight: 700;
+}
+
+.select-item:nth-child(1) {
+    justify-content: center;
+}
+
+p {
+    margin-block-end: 0em;
+    margin-block-start: 0em;  
+}
+
+.select-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    justify-content: flex-start;
 }
