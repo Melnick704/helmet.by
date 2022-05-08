@@ -43,6 +43,10 @@
 
 * {font-family: 'Montserrat', sans-serif;}    
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 100%;
 }
@@ -76,17 +80,136 @@
     display: flex;
     flex-direction: column;
     background: #fff;
-    transition: all 0.3s ease;
+    transition: all 0.13s ease;
     height: 100%;
 }
 
 .outro {
+    background: black;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: #070606;
-    height: 400px;
+    flex-direction: column;
+    padding: 100px 0;
 }
+
+.outro-item {
+    width: 74vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+}
+
+.fa-solid {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+.fa-brands, 
+.fa-solid {
+    font-size: 24px;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40vh repeat(3, auto);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: space-between;
+}
+
+.outro-logo {
+    display: flex !important;
+    align-items: center !important;
+    font-size: 4.5vh !important;
+}
+
+.outro-contacts {
+    grid-column-start: 4;
+    display: grid !important;
+    grid-template-columns: 35px auto;
+    color: white;
+}
+
+.outro-description {
+    grid-column-start: 1;
+    grid-row-start: span 2;
+}
+
+.about {
+    grid-column-start: 2;
+}
+
+.line-2 {
+    grid-row-start: 2;
+}
+
+.line-3 {
+    grid-row-start: 3;
+}
+
+.line-4 {
+    grid-row-start: 4;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.45vh;
+}
+
+.outro-title {
+    font-size: 2.7vh;
+    font-weight: 500;
+}
+
+.line-1 {
+    grid-row-start: 1;
+    align-items: flex-start;
+}
+
+.clients {
+    grid-column-start: 3;
+}
+
+.info p {
+    color: white;
+}
+
+.unp {
+    display: flex;
+    padding-top: 10vh;
+    justify-content: space-between;
+}
+
+.clients:hover,
+.grid-item.line-2.about:hover,
+.outro-contacts:hover,
+.outro-contacts:hover p  {
+    color: #61C9FB;
+}
+
+.outro-contacts p {
+    transition: color 0.13s ease-in-out;
+}
+
+.clients,
+.grid-item.line-2.about,
+.outro-contacts {
+    cursor: pointer;
+    transition: color 0.13s ease-in-out;
+}
+
+.unp p {
+    color: #353434;
+    font-size: 2vh;
+    font-weight: 400;
+}
+
 
 .inst-logo {
     width: 24px;
@@ -131,7 +254,7 @@
 }
 
 .logo-transition {
-    transition: all ease 0.25s; 
+    transition: all ease 0.13s; 
 }
 
 .contacts {
@@ -141,10 +264,6 @@
     align-items: center;
     height: auto;
 }
-
-.info {
-    height: 90%;
-} 
 
 .header-wrapper {
     display: flex;
@@ -180,7 +299,7 @@
     color: #414880;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    transition: color 0.15s ease-out;
+    transition: color 0.13s ease-out;
 }
 
 .menu-text:hover {
@@ -265,7 +384,7 @@
 .catalog-a {
     text-decoration: none;
     color: #000;
-    transition: color 0.15s ease-out;
+    transition: color 0.13s ease-out;
 }
 
 .catalog-a:hover {
@@ -274,7 +393,7 @@
 
 .group-img {
     width: 100%;
-    transition: 0.2s ease-in-out;
+    transition: 0.13s ease-in-out;
     overflow: hidden;
 }
 
@@ -331,7 +450,7 @@
     background-color: #61C9FB;
     width: 188px;
     height: 68px;
-    transition: color .3s,box-shadow .3s;
+    transition: color 0.13s,box-shadow 13s;
 }
 
 .plus {
@@ -350,7 +469,7 @@
     width: 188px;
     height: 68px;
     color: #ACE0F9;
-    transition: color .3s,box-shadow .3s;
+    transition: color 0.13s,box-shadow 13s;
 }
 
 .for-buttons {
@@ -467,7 +586,7 @@
 
 .right-arrow, .left-arrow {
     fill: #3B3B3B;
-    transition: fill 0.2s ease-out;
+    transition: fill 0.13s ease-out;
 }
 
 .right-comment-button:hover {
@@ -555,7 +674,7 @@
     line-height: 27px;
     color: #FFFFFF;
     cursor: pointer;
-    transition: 0.3s ease-out;
+    transition: 0.13s ease-out;
 }
 
 .comments-wrapper {
@@ -729,4 +848,28 @@ p {
     justify-content: flex-start;
     height: 100%;
     justify-content: flex-start;
+}
+
+#scroll {
+    position: fixed;
+    bottom: 100px;
+    left: 70px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+#scroll svg {
+    height: 60px;
+    width: 60px;
+}
+
+.btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.13s ease-in-out;
+}
+
+.btn_show {
+    opacity: 1;
+    visibility: visible;
 }

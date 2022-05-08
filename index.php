@@ -2,6 +2,10 @@
 
 <?php include 'include/header.php'; ?>
 
+<!--Скролл-->
+
+<?php include 'include/skroll.php'; ?>
+
 <!--Главный экран-->
 
 <div class="content">
@@ -47,6 +51,7 @@
 <?php include 'include/footer.php'; ?>
 
 <script src="<script>.js"></script>
+<script src="index.js"></script>
 
 <!--Параллакс бибилотека-->
 <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>

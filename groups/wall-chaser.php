@@ -8,6 +8,11 @@
 <!--Хедер-->
 <?php include '../include/header.php'; ?>  
 
+<!--Скролл-->
+
+<?php include '../include/skroll.php'; ?>
+<script src="../index.js"></script>
+
       <div class="catalog-content">
         <div class="catalog-wrapper">
         <div class="catalog-title fatty group">Каталог</div>

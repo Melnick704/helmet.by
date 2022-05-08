@@ -12,7 +12,7 @@
       <div class="header">
         <div class="header-wrapper">
           <div class="logo-wrapper">
-            <a href="https://helmet.by/" style="text-decoration: none; color: black;"><div class="logo" style="cursor: pointer;">Helmet</div></a>
+            <a href="https://helmet.by/" style="text-decoration: none; color: black;"><div class="logo" style="cursor: pointer;">HELMET</div></a>
           </div>
           <div class="menu">
             <a href="https://helmet.by/catalog.php" style="text-decoration: none; color: black;"><p class="menu-text selected-catalog" style="cursor: pointer;">Каталог</p></a>
